@@ -1,0 +1,161 @@
+.objeto {
+    font-size: 3rem;
+}
+
+/* SIMULAÇÃO DE PARTIDA */
+
+.quadrado-inferior-esquerdo__objeto {
+    animation: primeiraJogada 16s infinite;
+}
+
+.quadrado-superior-esquerdo__objeto {
+    animation: segundaJogada 16s infinite;
+}
+
+.quadrado-superior-direito__objeto {
+    animation: terceiraJogada 16s infinite;
+}
+
+.quadrado-meio__objeto {
+    animation: quartaJogada 16s infinite;
+}
+
+.quadrado-inferior-direito__objeto {
+    animation: quintaJogada 16s infinite;
+}
+
+.quadrado-direito__objeto {
+    animation: sextaJogada 16s infinite;
+}
+
+.quadrado-inferior__objeto {
+    animation: setimaJogada 16s infinite;
+}
+
+
+.quadrado-inferior-esquerdo::before,
+.quadrado-inferior::before,
+.quadrado-inferior-direito::before {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bgVitoria 16s infinite;
+}
+
+@keyframes primeiraJogada {
+
+    0%,
+    10%,
+    100% {
+        opacity: 0;
+    }
+
+    15%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes segundaJogada {
+
+    0%,
+    20%,
+    100% {
+        opacity: 0;
+    }
+
+    25%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes terceiraJogada {
+
+    0%,
+    30%,
+    100% {
+        opacity: 0;
+    }
+
+    35%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes quartaJogada {
+
+    0%,
+    40%,
+    100% {
+        opacity: 0;
+    }
+
+    45%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes quintaJogada {
+
+    0%,
+    50%,
+    100% {
+        opacity: 0;
+    }
+
+    55%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes sextaJogada {
+
+    0%,
+    60%,
+    100% {
+        opacity: 0;
+    }
+
+    65%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes setimaJogada {
+
+    0%,
+    70%,
+    100% {
+        opacity: 0;
+    }
+
+    75%,
+    95% {
+        opacity: 1;
+    }
+}
+
+@keyframes bgVitoria {
+
+    0%,
+    80%,
+    100% {
+        background-color: inherit;
+    }
+
+    85%,
+    95% {
+        background-color: rgba(0, 180, 0, 0.733);
+    }
+}

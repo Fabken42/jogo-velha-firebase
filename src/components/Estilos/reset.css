@@ -1,0 +1,18 @@
+:root{
+    --cor-texto-primaria: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: cursive;
+    /* color: var(--cor-texto-primaria) */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+}

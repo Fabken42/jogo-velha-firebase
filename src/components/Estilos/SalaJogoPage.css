@@ -1,0 +1,15 @@
+.placar-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .placar-text {
+    font-size: 20px;
+    color: #5c3e59;
+  }
+  
+  .alerta-text {
+    font-size: 23px;
+    color: #f55951;
+  }
+  
